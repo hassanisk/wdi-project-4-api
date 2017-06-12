@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610225742) do
+ActiveRecord::Schema.define(version: 20170612114055) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,21 @@ ActiveRecord::Schema.define(version: 20170610225742) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "image"
+  end
+
+  create_table "favs", force: :cascade do |t|
+    t.bigint "user_id"
+    t.integer "bodypart"
+    t.text "muscelsname"
+    t.text "name"
+    t.text "desc"
+    t.text "rep"
+    t.text "image"
+    t.integer "level"
+    t.string "difficulty"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_favs_on_user_id"
   end
 
   create_table "nutritions", force: :cascade do |t|
@@ -46,4 +61,5 @@ ActiveRecord::Schema.define(version: 20170610225742) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "favs", "users"
 end

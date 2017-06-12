@@ -7,6 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # u1= User.create!(username: 'Hassan', email: 'has@has.com', username: 'has', image: 'https://www.fillmurray.com/200/300' )
 # u2= User.create!(username: 'Sah', email: 'sah@sah.com', username: 'Sah', image: 'https://www.fillmurray.com/200/300' )
+User.create!(username: "hassan", image:"https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAjyAAAAJDVjNmE3NjE0LWEzYWUtNGQxMC1iYzgxLWU0MWIwZjE1NjYwZg.jpg", email:"hassan@hassan.com", password: "password", password_confirmation: "password")
+
+
+
 Nutrition.create!([
   {
     name: "5:2 diet",

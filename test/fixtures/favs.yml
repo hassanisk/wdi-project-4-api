@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  bodypart: 1
+  muscelsname: MyText
+  name: MyText
+  desc: MyText
+  rep: MyText
+  image: MyText
+  level: 1
+  difficulty: MyString
+
+two:
+  user: two
+  bodypart: 1
+  muscelsname: MyText
+  name: MyText
+  desc: MyText
+  rep: MyText
+  image: MyText
+  level: 1
+  difficulty: MyString
